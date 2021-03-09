@@ -17,7 +17,7 @@ mongoose.connect("mongodb://localhost/react-shopping-cart-db", {
 // model creation (schema)
 const Product = mongoose.model("products", new mongoose.Schema({
     _id: {
-        type: String, default: shortid.generate()
+        type: String, default: shortid.generate
     },
     title: String,
     description: String,
@@ -47,7 +47,7 @@ app.post("/api/products", async (req, res) => {
     res.send(savedProduct)
 });
 
-app.delete("api/products/:id", async (req, res) => {
+app.delete("/api/products/:id", async (req, res) => {
     const deleteProduct = await Product.findByIdAndDelete(req.params.id)
     res.send(deleteProduct)
 })
