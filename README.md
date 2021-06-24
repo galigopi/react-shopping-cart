@@ -1,3 +1,10 @@
+
+Run this project 
+1) npn start(for ui)
+2) nodemon server.js (for server)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
